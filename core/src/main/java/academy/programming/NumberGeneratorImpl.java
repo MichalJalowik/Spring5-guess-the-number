@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.Random;
 
-@Getter
+
 @Component
 public class NumberGeneratorImpl implements NumberGenerator {
 
@@ -20,8 +20,10 @@ public class NumberGeneratorImpl implements NumberGenerator {
 //    @MinNumber
 //    private int minNumber;
 
+    @Getter
     private final int maxNumber;
 
+    @Getter
     private final int minNumber;
 
     @Autowired
